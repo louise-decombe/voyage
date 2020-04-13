@@ -31,24 +31,31 @@ body {
   margin: 1%;
   background-color: lightgrey;
   background-size: cover;
-  background-position: center;
+  background-position: right;
+  background-image: url(https://images.pexels.com/photos/3254753/pexels-photo-3254753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   position: relative;
   text-align: center;
 }
 
 .blocpresentation section {
-  line-height: 40px;
-  background-color: white;
+  line-height: 40px;  background-color: white;
   padding: 3%;
 }
 
 .blocpresentation h2{
-  font-size: 200%;
+  font-size: 250%;
   background-color: white;
   padding: 2%;
   margin: 2%;
+  border-radius: 10px;
+  font-family: 'PT Sans', sans-serif;
+
 }
 
+.blocpresentation h2:hover {
+  color:grey;
+  font-size: 300%;
+}
 
 /*************************************/
 /* ***********Texte défilant *******/
@@ -62,16 +69,18 @@ body {
 	overflow: hidden;
 	position: relative;
 	table-layout: fixed;
-	width: 90%;
+	width: 65%;
   background-color: white;
   padding: 0.5%;
+  border-radius: 10px;
+  opacity: 0.7;
 }
 
 /*********texte qui défile********/
 
 .defile {
   font-size: 150%;
-  font-style: italic;
+  font-family: 'Roboto Mono', monospace;
 	display:block;
 	-webkit-animation:linear marqueelike 15s infinite ;
 	-moz-animation:linear marqueelike 1s infinite ;
@@ -82,6 +91,12 @@ body {
 	padding:0 5px;
 	text-align:left;
 	height:25px;
+}
+
+
+.defile span {
+  font-weight: bold;
+  color:red;
 }
 
 .defile:after {
@@ -143,6 +158,8 @@ body {
   background-position: center;
   position: relative;
   text-align: center;
+  font-family: 'PT Sans', sans-serif;
+
 }
 
 /******************************/
@@ -156,6 +173,7 @@ body {
   background-color: white;
   opacity: 0.8;
   padding: 3%;
+
 }
 
 .sous-bloc1:hover {
@@ -174,6 +192,7 @@ body {
 /***********une fois pour tout les blocs*********/
 .btn {
   text-align: center;
+  font-family: 'PT Sans', sans-serif;
   display: inline-block;
   width: 100px;
   font-weight: bold;
@@ -219,6 +238,8 @@ body {
   background-size: cover;
   position: relative;
   text-align: center;
+  font-family: 'PT Sans', sans-serif;
+
 }
 
 /******************************/
@@ -263,6 +284,8 @@ body {
   background-size: cover;
   position: relative;
   text-align: center;
+  font-family: 'PT Sans', sans-serif;
+
 }
 
 /*****************************/
