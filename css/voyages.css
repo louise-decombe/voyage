@@ -1,0 +1,212 @@
+/******************************/
+/* WARNING: corps général du css */
+/******************************/
+/* suppression des marges */
+/***taille max de l'écran********/
+/******************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+}
+
+/************************************************/
+/* WARNING: début du main de la page d'accueil*/
+
+/*****************************************/
+/***********BlocPresentation************/
+/*************************************/
+
+.blocpresentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/accueil.jpg);
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  background-position: center;
+}
+
+.blocpresentation section{
+  line-height: 40px;
+}
+
+
+
+/*****************************************/
+/******************Bloc1****************/
+/*************************************/
+.bloc1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/accueil1.jpg);
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+/******************************/
+/*******sous-bloc1************/
+/******************************/
+.sous-bloc1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3%;
+}
+
+.sous-bloc1:hover{
+  opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.sous-bloc1 a {
+  display: flex;
+  flex-direction: row;
+  color:grey;
+}
+/***************************************************/
+/**********bouton lien vers pages général**********/
+/***********une fois pour tout les blocs*********/
+.btn {
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+  padding: 3%;
+  margin: 2%;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out
+}
+/***************************************************/
+/**********bouton lien vers pages animation**********/
+/***********une fois pour tout les blocs*********/
+
+.btn:hover, .btn:active {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  box-shadow:
+    2px 2px black,
+    4px 4px black,
+    6px 6px black;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+/******************************/
+/**************Bloc2************/
+/******************************/
+.bloc2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/accueil2.jpg);
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+/******************************/
+/*******sous-bloc2************/
+/******************************/
+.sous-bloc2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3%;
+}
+
+.sous-bloc2:hover{
+  opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.sous-bloc2 a {
+  display: flex;
+  flex-direction: row;
+  color:grey;
+}
+
+/******************************/
+/*********Bloc3****************/
+/******************************/
+
+.bloc3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(accueil3.jpg);
+  background-position: center;
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+
+/******************************/
+/*******sous-bloc3************/
+/******************************/
+.sous-bloc3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3%;
+}
+
+
+.sous-bloc3:hover{
+  opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.sous-bloc3 a {
+  display: flex;
+  flex-direction: row;
+  color:grey;
+}
+
+
+/*_____________FIN DU MAIN________*/
