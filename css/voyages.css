@@ -125,7 +125,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(images/accueil2.jpg);
+  background-image: url(accueil1.jpg)
   box-sizing: content-box;
   width: 100%;
   max-width: 1800px;
