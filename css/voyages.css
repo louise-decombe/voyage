@@ -1,3 +1,320 @@
+
+/************************************/
+/* WARNING: corps général du css **/
+/********************************/
+/* suppression des marges *****/
+/***taille max de l'écran*****/
+/***************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+}
+
+/************************************************/
+/* WARNING: début du main de la page d'accueil*/
+/*********************************************/
+/***********BlocPresentation****************/
+/*****************************************/
+.blocpresentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: right;
+  background-image: url(https://images.pexels.com/photos/3254753/pexels-photo-3254753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  position: relative;
+  text-align: center;
+}
+
+.blocpresentation section {
+  line-height: 40px;  background-color: white;
+  padding: 3%;
+}
+
+.blocpresentation h2{
+  font-size: 250%;
+  background-color: white;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+  font-family: 'PT Sans', sans-serif;
+
+}
+
+.blocpresentation h2:hover {
+  color:grey;
+  font-size: 300%;
+}
+
+/*************************************/
+/* ***********Texte défilant *******/
+/*********************************/
+
+/*****bloc entourant le texte****/
+
+.blocdefile {
+	display: block;
+	margin: 3% auto;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 65%;
+  background-color: white;
+  padding: 0.5%;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+/*********texte qui défile********/
+
+.defile {
+  font-size: 150%;
+  font-family: 'Roboto Mono', monospace;
+	display:block;
+	-webkit-animation:linear marqueelike 15s infinite ;
+	-moz-animation:linear marqueelike 1s infinite ;
+	-o-animation:linear marqueelike 20s infinite ;
+	-ms-animation:linear marqueelike 20s infinite ;
+	animation:linear marqueelike 20s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+}
+
+
+.defile span {
+  font-weight: bold;
+  color:red;
+}
+
+.defile:after {
+	position:absolute;
+	white-space:nowrap;
+}
+
+/*********animation et responsive********/
+
+
+@-webkit-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-moz-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-o-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-ms-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+
+@media only screen and (max-width: 1000px) {
+.defileParent {
+	display: block;
+	margin: 3em auto;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 100%;
+}
+}
+
+
+/*****************************************/
+/******************Bloc1****************/
+/*************************************/
+.bloc1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.pexels.com/photos/1133505/pexels-photo-1133505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+
+}
+
+/******************************/
+/*******sous-bloc1************/
+/****************************/
+.sous-bloc1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3%;
+
+}
+
+.sous-bloc1:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.sous-bloc1 a {
+  display: flex;
+  flex-direction: row;
+  color: grey;
+}
+
+/***************************************************/
+/**********bouton lien vers pages général**********/
+/***********une fois pour tout les blocs*********/
+.btn {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+  padding: 3%;
+  margin: 2%;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out
+}
+
+/***************************************************/
+/********bouton lien vers pages animation**********/
+/***********une fois pour tout les blocs*********/
+.btn:hover, .btn:active {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  box-shadow:
+    2px 2px black,
+    4px 4px black,
+    6px 6px black;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+/******************************/
+/**************Bloc2**********/
+/****************************/
+.bloc2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+
+}
+
+/******************************/
+/*******sous-bloc2************/
+/****************************/
+.sous-bloc2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3%;
+}
+
+.sous-bloc2:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.sous-bloc2 a {
+  display: flex;
+  flex-direction: row;
+  color: grey;
+}
+
+/******************************/
+/*********Bloc3***************/
+/****************************/
+.bloc3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.pexels.com/photos/991012/pexels-photo-991012.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.jpg);
+  background-position: center;
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+
+}
+
+/*****************************/
+/*******sous-bloc3***********/
+/***************************/
+.sous-bloc3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3%;
+}
+
+.sous-bloc3:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.sous-bloc3 a {
+  display: flex;
+  flex-direction: row;
+  color: grey;
+}
+
+/*_____________FIN DU MAIN________*/
+
 /*Début footer*/
 #footervoyage {
     display: flex;
