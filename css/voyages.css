@@ -350,7 +350,7 @@ header hr
     }
 
 /************************************************/
-/* WARNING: d�but du main de la page d'accueil*/
+/* WARNING: debut du main de la page d'accueil*/
 /*********************************************/
 /***********BlocPresentation****************/
 /*****************************************/
@@ -394,7 +394,7 @@ header hr
 }
 
 /*************************************/
-/* ***********Texte d�filant *******/
+/* ***********Texte defilant *******/
 /*********************************/
 
 /*****bloc entourant le texte****/
@@ -426,7 +426,8 @@ header hr
 	margin-left:-100%;
 	padding:0 5px;
 	text-align:left;
-	height:25px;
+    height:25px;
+    overflow: hidden;
 }
 
 
