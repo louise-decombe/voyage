@@ -151,6 +151,7 @@ header nav
         border-radius: 20px;
         box-shadow: 3px 3px 10px gray;
         animation: fadein 3s;
+        z-index: 100;
     }
 #menuhoverh li:hover
     {
@@ -264,6 +265,7 @@ header hr
         box-shadow: 3px 3px 10px gray;
         border-radius: 20px;
         animation: fadeindown 3s;
+        z-index: 100;
     }
 #equipeh:target :active #menutargeth li:hover h2
     {
