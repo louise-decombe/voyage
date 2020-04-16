@@ -1,0 +1,157 @@
+@keyframes slide
+    {
+        0%, 5%, 100%
+            {
+                transform: translateX(0);
+            }
+        25%
+            {
+                transform: translateX(-80vw);
+            }
+        50%
+            {
+                transform: translateX(-160vw);
+            }
+        75%
+            {
+                transform: translateX(-80vw);
+            }
+    }
+html    
+    {
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+body
+    {
+        margin: 0;
+    }
+#mainv6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+#mainv6 h1      
+    {
+        font-size: 35px;
+    }
+#mainv6 p
+    {
+        width: 80%;
+        text-align: justify;
+    }
+/* Intro */
+#introv6
+    {
+        width: 80vw;
+        overflow: hidden;
+        margin-top: 5vh;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px green;
+        
+    }
+#sliderv6
+    {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 5;
+        width: 80vw;
+        height: 100vh;
+        animation: slide 20s infinite;
+    }
+#sliderv6 img
+    {
+        width: 80vw;
+    }
+/* Contenu */
+#contenuv6
+    {
+        display: flex;
+        flex-direction: row;
+    }
+/* Première partie */
+#partie1v6
+    {
+        display: flex;
+        flex-direction: column;
+    }
+/* Pourquoi */
+#pourquoiv6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+/* Que faire */
+#quev6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+#quev6 img
+    {
+        width: 50vw;
+    }
+.menuv6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.menuhoverv6
+    {
+        display: none;
+    }
+.menuv6:hover .menuhoverv6  
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+/* Specialité */
+#spev6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+/* Marché */
+#marketv6   
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+#imgmarketv6
+    {
+        width: 50vh;
+    }
+/* Dessert */
+#dessertv6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+#titrev6
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 30%;
+    }
+#imgfruit
+    {
+        height: 10vh;
+    }
+/* Tips */
+#tipsv6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
