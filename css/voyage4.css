@@ -33,28 +33,6 @@
 }
 
 /*****************************************/
-/***********Données*********************/
-/*************************************/
-.donnees {
-  font-size: 100%;
-  text-align: center;
-margin: 2%;
-padding: 2%;
-}
-
-.donnees table, th, td {
-  line-height: 40px;
-  border: 1px solid black;
-  border-style: dotted;
-  width: 500px;
-}
-
-.donnees caption {
-  font-size: 200%;
-  padding: 1%;
-}
-
-/*****************************************/
 /***********mainitem12******************/
 /*************************************/
 .mainitem1, .mainitem2 {
@@ -65,6 +43,7 @@ padding: 2%;
   margin: 1%;
   justify-content: center;
   text-decoration: none;
+  flex-wrap: wrap;
 }
 
 .mainitem3 {
@@ -74,14 +53,17 @@ padding: 2%;
   background-color: #F2F2F2;
   padding: 1%;
   margin: 1%;
+  flex-wrap: wrap;
 }
 
 .mainitem4 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: #F2F2F2;
   padding: 1%;
   margin: 1%;
+  flex-wrap: wrap;
 }
 
 /*****************************************/
@@ -90,32 +72,35 @@ padding: 2%;
 .visite {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   padding: 5px;
-  padding: 1%;
-  margin: 1%;
+  padding: 2%;
+  margin: 2%;
   font-family: 'Raleway', sans-serif;
   background-color: white;
-  line-height: 30px;
+  line-height: 160%;
   flex-basis: 50%;
+  font-size: 130%;
 }
 
 .visite a {
-
   text-decoration: none;
-  font-size: 200%;
-  line-height: 60px;
-  color:black;
+  font-size: 150%;
+  line-height: 150%;
+  color: white;
   margin: 1%;
-  background-color: #F2F5A9;
+  background-color: orange;
   border-radius: 10px;
   text-align: center;
-
 }
 
 .visite a:hover {
   background-color: #F6D8CE;
-  color:white;
+  color: white;
+}
+
+.visite h2 {
+  font-weight: bold;
+  margin: 1%;
 }
 
 /*****************************************/
@@ -124,7 +109,6 @@ padding: 2%;
 .todo {
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   flex-basis: 10%;
   flex-wrap: wrap;
@@ -153,35 +137,61 @@ padding: 2%;
   flex-direction: column;
 }
 
-
 /*****************************************/
 /***************QuandPartir**************/
 /*************************************/
 .quand {
   display: flex;
-  flex-direction: column;
-  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 1%;
   margin: 1%;
-  flex-basis: 50%;
   font-family: 'Raleway', sans-serif;
+  text-align: justify;
 }
 
 .quand2 {
   display: flex;
-  flex-direction: column;
-  flex-basis: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.quand2 iframe {
+  width: 100%;
+}
+
+.meteo {
+  line-height: 40px;
+  width: 50%;
+}
+
+.meteo h2 {
+  background-color: orange;
+  color:white;
+  padding: 2%;
+  margin:2%;
+  margin-right: 60%;
+}
+
+.meteo a{
+  text-decoration: none;
+  color:red;
+}
+
+.meteo a:hover {
+  color: orange;
+}
+.quand2 {
+  display: flex;
   padding: 1%;
   margin: 1%;
-  font-family: 'Raleway', sans-serif;
-  flex-wrap: wrap;
 }
 
 /*****************************************/
 /***************TipsPerso****************/
 /*************************************/
 .tips {
-
   border: solid black 5px;
   border-style: dotted;
   flex-basis: 50%;
@@ -192,43 +202,30 @@ padding: 2%;
 
 .tips p {
   text-align: justify;
+  margin: 1%;
 }
 
 .tips img {
   width: 30%;
+  height: 60%;
   justify-content: center;
   border-radius: 10px;
-}
-
-#carroussel {
-  display: flex;
-  justify-content: space-around;
-  flex-basis: 50%;
-  position: relative;
-  width: 60%;
   margin: 1%;
+  box-shadow: 8px 8px 8px #aaa;
 }
 
-#carroussel img {
-  width: 105%;
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+.tips h2 {
+  background-color: orange;
+  padding: 2%;
+  margin: 3%;
+  color: white;
 }
 
-#carroussel img.top:hover {
-  opacity: 0;
-}
 
 /*****************************************/
 /***************Quoiprevoir*************/
 /*************************************/
 .prep {
-  box-sizing: border-box;
-  width: 100%;
   padding: 1%;
   margin: 1%;
   font-family: 'Raleway', sans-serif;
@@ -236,12 +233,12 @@ padding: 2%;
   line-height: 40px;
   text-align: justify;
   font-size: 120%;
-  height: 400px;
 }
 
 .prep h2 {
   text-align: center;
   font-size: 200%;
+  margin: 1%;
 }
 
 .prep p {
@@ -262,6 +259,33 @@ padding: 2%;
 .prep a:hover {
   background-color: white;
   color: black;
+  padding: 1%;
+margin-left : 22%;
+}
+
+#carroussel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.shadow img{
+  width: 250px;
+  height: 200px;
+  -webkit-filter: grayscale(1) blur(1px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.shadow:hover img {
+  width: 150px; /* on affiche l'image au carré */
+  height: 150px;
+  border-radius: 50%;  /* on arrondit l'image */
+  -webkit-transform: rotate(360deg); /* rotation de l'image */
+  transform: rotate(360deg);
+  -webkit-filter: grayscale(0) blur(0px);
+
 }
 
 /*****************************************/
@@ -273,28 +297,26 @@ padding: 2%;
   font-family: 'Raleway', sans-serif;
   background-color: white;
   text-align: center;
-  height: 500px;
 }
 
 .specialite img {
-width: 10%;
-margin: 1%;
-padding: 1%;
-
+  width: 10%;
+  margin: 1%;
+  padding: 1%;
 }
-
+.specialite p {
+  margin: 1%;
+  background-color: lightgrey;
+}
 /*****************************************/
 /***********Musique*********************/
 /*************************************/
 .musique {
-  box-sizing: border-box;
-  width: 100%;
   padding: 1%;
   margin: 1%;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  font-size: 120%;
-  flex-basis: 50%;
+  font-size: 100%;
   background-color:
 }
 
@@ -303,8 +325,9 @@ padding: 1%;
   margin: 1%;
 }
 
-.musique figure{
-  background-color: white;
+.musique figure {
+  background: linear-gradient(yellow, orange);
+margin: 2%;
   padding: 3%;
   border-radius: 10px;
 }
@@ -313,24 +336,52 @@ padding: 1%;
 /***********Insolite********************/
 /*************************************/
 .insolite {
-  box-sizing: border-box;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   padding: 1%;
   margin: 1%;
   font-family: 'Raleway', sans-serif;
-  flex-basis: 50%;
   background-color: white;
-  text-align: center ;
-
+  text-align: center;
 }
 
 .insolite p {
-  background-color: lightgrey;
+  background-color: orange;
   padding: 2%;
+  margin: 2%;
   border-radius: 10px;
   line-height: 30px;
+  color: white;
 }
 
 .insolite img {
+  border-radius: 10px;
+}
+
+/*****************************************/
+/***********Données*********************/
+/*************************************/
+.donnees {
+  font-size: 100%;
+  text-align: center;
+  margin: 2%;
+  padding: 4%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.donnees table, th, td {
+  line-height: 40px;
+  border: 1px solid black;
+  border-style: dotted;
+}
+
+.donnees caption {
+  font-size: 150%;
+  padding: 1%;
+  background-color:orange;
+  color:white;
+  margin: 1%;
   border-radius: 10px;
 }
