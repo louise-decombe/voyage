@@ -92,24 +92,28 @@ body
     }
 #quev6 img
     {
-        width: 50vw;
+        width: 30vw;
     }
-.menuv6
+#chosev6
     {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-.menuhoverv6
-    {
-        display: none;
-    }
-.menuv6:hover .menuhoverv6  
+#menuv6
     {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+#menuv6 a   
+    {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        width: 100%;
     }
 /* Specialité */
 #spev6
@@ -165,12 +169,13 @@ body
         border: 1px solid black;
         margin-top: 5vh;
         margin-bottom: 5vh;
+        height: 300vh;
     }
 /* Quand */
 #quandv6
     {
         border: 1px dashed black;
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -226,10 +231,12 @@ td
         flex-direction: column;
         align-items: center;
         border: 1px dashed black;
+        width: 80%;
     }
 #quoiv6 h1  
     {
         text-align: center;
+        margin: 0;
     }
 /* Video */
 #videov6
