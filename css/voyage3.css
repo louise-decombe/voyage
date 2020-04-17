@@ -17,7 +17,6 @@ main {
   justify-content: center;
   background-image: url(../images/voyage3/athenes.gif);
   box-sizing: content-box;
-  width: 100%;
   max-width: 1800px;
   height: 600px;
   padding: 1px;
@@ -254,7 +253,7 @@ main {
   margin: 1% auto;
   font-family: 'Raleway', sans-serif;
   color: black;
-  line-height: 120%;
+  line-height: 150%;
   text-align: justify;
   font-size: 120%;
   height: 400px;
@@ -270,33 +269,46 @@ main {
 
 .quand h2 {
   color:white;
+  text-align: center;
+  font-size: 200%;
+  background-color: #1B019B;
+  padding: 3%;
+  margin: 6%;
+  border-radius: 10px;
 }
 
 /*****************************************/
 /***************Quoiprevoir*************/
 /*************************************/
-.prep {
+.prep  {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 1%;
   margin: 1% auto;
   font-family: 'Raleway', sans-serif;
   color: black;
-  line-height: 120%;
+  line-height: 150%;
   text-align: justify;
   font-size: 120%;
+  height: 400px;
   color: #003366;
 }
-
 .prep h2 {
   text-align: center;
   font-size: 200%;
+  color:white;
+  background-color: #1B019B;
+  padding: 3%;
+  margin: 6%;
+  border-radius: 10px;
 }
 
 .prep p {
   background-color: white;
   border-radius: 10px;
   padding: 1%;
+
 }
 
 /*****************************************/
@@ -326,8 +338,13 @@ main {
 }
 
 .tips1:hover {
-  margin-left: -20px;
-}
+  margin-left: -20px; }
+
+  .tips1 span {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
 
 .tips2 {
   display: flex;
@@ -355,8 +372,14 @@ main {
 }
 
 .tips2:hover {
-  margin-left: -20px;
+  margin-right: -20px;
 }
+
+.tips2 span {
+  font-size: 150%;
+  font-weight: bold;
+}
+
 
 /*****************************************/
 /***********SepcialiteLocale************/
@@ -372,6 +395,19 @@ main {
   font-family: 'Raleway', sans-serif;
   flex-basis: 20%;
   flex-wrap: wrap;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  box-shadow: 8px 8px 6px black;
+
+}
+
+.specialite:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  box-shadow: 1px 1px 1px ;
+
 }
 
 .specialite p, h3 {
@@ -385,28 +421,17 @@ main {
   text-decoration: none;
   background-color: #048B9A;
   color: white;
-  padding: 1%;
-  margin-top: 10%;
-  font-size: 120%;
+  padding: 5%;
+    font-size: 120%;
+    margin: 15%;
 }
 
 .specialite a:hover {
   background-color: #80D0D0;
+  margin:18%;
+  padding: 7%;
+
 }
-
-.specialite {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.specialite:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-
 
 /*****************************************/
 /***********Musique*********************/
@@ -442,6 +467,8 @@ main {
   text-align: center;
   margin: 2%;
   padding: 2%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .donnees table, th, td {
@@ -459,23 +486,20 @@ main {
 /***********Insolite********************/
 /*************************************/
 .insolite {
-  box-sizing: border-box;
   width: 100%;
   padding: 1%;
   margin: 1%;
   font-family: 'Raleway', sans-serif;
-  flex-basis: 50%;
   background-color: white;
   text-align: center;
+  border-radius: 10px;
 }
 
 .insolite p {
-  background-color: lightgrey;
+  background-color:#00CCCB ;
+  color: white;
   padding: 2%;
+  margin: 2%;
   border-radius: 10px;
-  line-height: 30px;
-}
-
-.insolite img {
-  border-radius: 10px;
+  font-size: 150%;
 }
