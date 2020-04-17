@@ -168,20 +168,21 @@
 
 .meteo h2 {
   background-color: orange;
-  color:white;
+  color: white;
   padding: 2%;
-  margin:2%;
+  margin: 2%;
   margin-right: 60%;
 }
 
-.meteo a{
+.meteo a {
   text-decoration: none;
-  color:red;
+  color: red;
 }
 
 .meteo a:hover {
   color: orange;
 }
+
 .quand2 {
   display: flex;
   padding: 1%;
@@ -221,7 +222,6 @@
   color: white;
 }
 
-
 /*****************************************/
 /***************Quoiprevoir*************/
 /*************************************/
@@ -260,17 +260,16 @@
   background-color: white;
   color: black;
   padding: 1%;
-margin-left : 22%;
+  margin-left: 22%;
 }
 
 #carroussel {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
-.shadow img{
+.shadow img {
   width: 250px;
   height: 200px;
   -webkit-filter: grayscale(1) blur(1px);
@@ -279,13 +278,15 @@ margin-left : 22%;
 }
 
 .shadow:hover img {
-  width: 150px; /* on affiche l'image au carré */
+  width: 150px;
+  /* on affiche l'image au carré */
   height: 150px;
-  border-radius: 50%;  /* on arrondit l'image */
-  -webkit-transform: rotate(360deg); /* rotation de l'image */
+  border-radius: 50%;
+  /* on arrondit l'image */
+  -webkit-transform: rotate(360deg);
+  /* rotation de l'image */
   transform: rotate(360deg);
   -webkit-filter: grayscale(0) blur(0px);
-
 }
 
 /*****************************************/
@@ -304,10 +305,12 @@ margin-left : 22%;
   margin: 1%;
   padding: 1%;
 }
+
 .specialite p {
   margin: 1%;
   background-color: lightgrey;
 }
+
 /*****************************************/
 /***********Musique*********************/
 /*************************************/
@@ -327,7 +330,7 @@ margin-left : 22%;
 
 .musique figure {
   background: linear-gradient(yellow, orange);
-margin: 2%;
+  margin: 2%;
   padding: 3%;
   border-radius: 10px;
 }
@@ -380,8 +383,8 @@ margin: 2%;
 .donnees caption {
   font-size: 150%;
   padding: 1%;
-  background-color:orange;
-  color:white;
+  background-color: orange;
+  color: white;
   margin: 1%;
   border-radius: 10px;
 }
