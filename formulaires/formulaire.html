@@ -6,12 +6,14 @@
     <title>Contacts</title>
     <link rel="stylesheet" href="../css/voyages.css">
     <link rel="stylesheet" href="../css/formulaire.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Mono:ital,wght@1,300&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
     <header>
         <section id="titreh">
-            <h1>Mais ou k'est k'on va ?</h1>
+            <a href="../voyages.html" id="retourh"><h1>Voyagefinement</h1></a>
             <h2>"Le plus beau voyage, c'est celui qu'on n’a pas encore fait" - <span id="auteurh">Loïck Peyron</span>
             </h2>
             <nav>
@@ -108,7 +110,7 @@
                     </p>
                     <p>
                         <label for="mail">Email</label>
-                        <input type="email" name="mail" id="mail">
+                        <input type="email" name="mail" id="mail" required>
                     </p>
                     <p>
                         <label for="tel">Téléphone</label>
@@ -167,7 +169,7 @@
                     <p>
                         <label for="text">Dites nous tout</label>
                         <textarea name="text" id="text" cols="30" rows="10"
-                            placeholder="demandez nous tout ce que vous voulez, questions, précisions, demandes. Nous répondons à tout..."></textarea>
+                            placeholder="demandez nous tout ce que vous voulez, questions, précisions, demandes. Nous répondons à tout..." required></textarea>
                     </p>
                 </fieldset>
             </section>

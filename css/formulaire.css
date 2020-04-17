@@ -2,7 +2,6 @@ body {
     background-image: url("../images/travelform.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: ;
 }
 
 #formulaire {
@@ -73,6 +72,7 @@ select {
 
 fieldset {
     background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
     border-radius: 20px;
 }
 
