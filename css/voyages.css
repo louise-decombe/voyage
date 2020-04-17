@@ -665,7 +665,7 @@ footer {
 }
 
 #footervoyage img {
-    width: 12vh;
+    width: 12vw;
     height: 12vh;
     border-radius: 10px;
     margin: 2%;
@@ -702,7 +702,7 @@ footer h4 {
 }
 
 #homefooter img {
-    width: 8vh;
+    width: 8vw;
     height: 8vh;
 }
 
