@@ -324,3 +324,141 @@ header hr
     {
         display: none;
     }
+    /*D�but footer*/
+footer {
+    background-image: url("../images/atterrissage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footervoyage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footervoyage img {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+footer h4 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#accesrapidefooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+#accesrapidefooter img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#accesrapidefooter img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+#homefooter {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+#homefooter img {
+    width: 8vh;
+    height: 8vh;
+}
+
+#louisemartinfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#louisefooter {
+    margin-right: 2%;
+}
+
+#martinfooter {
+    margin-left: 2%;
+}
+
+#maximefooter {
+    display: flex;
+    justify-content: center;
+}
+
+#liensfooter {
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+#liensfooter li {
+    list-style-type: none;
+    padding-left: 5%;
+}
+
+#liensfooter p {
+    font-weight: bold;
+}
+
+#liensfooter a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: burlywood;
+}
+
+#liensfooter a:hover {
+    cursor: pointer;
+    background-color: rgba(161, 48, 48, 0.733);
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    border-radius: 5px;
+}
+
+#contactfooter {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 2px black;
+}
+
+#contactfooter p {
+    text-align: justify;
+}
+
+#contactfooter a {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: burlywood;
+}
+
+#contactfooter a:hover {
+    cursor: pointer;
+    background-color: rgba(48, 157, 161, 0.733);
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    border-radius: 5px;
+}
+
+#liensfooter,
+#contactfooter {
+    color: white;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 4%;
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* fin footer*/

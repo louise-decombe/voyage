@@ -155,3 +155,88 @@ body
         flex-direction: column;
         align-items: center;
     }
+/* Partie 2 */
+#partie2v6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+/* Quand */
+#quandv6
+    {
+        border: 1px dashed black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5vh;
+        margin-bottom: 5vh;
+    }
+table
+    {
+        display: flex;
+        width: 50%;
+        border-spacing: 0;
+    }
+tbody
+    {
+        width: 15vw;
+    }
+td  
+    {
+        text-align: center;
+        width: 50%;
+        border: 1px solid black;
+    }
+/* couleur */
+.vert
+    {
+        background-color: green;
+    }
+.orange
+    {
+        background-color: orange;
+    }
+.rouge
+    {
+        background-color: red;
+    }
+/* legende */
+#legende
+    {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        font-size: 12px;
+    }
+#legende td 
+    {
+        width: 33%;
+        height: 4vh;
+    }
+/* Quoi */
+#quoiv6
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px dashed black;
+    }
+#quoiv6 h1  
+    {
+        text-align: center;
+    }
+/* Video */
+#videov6
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 100vh;
+    }
