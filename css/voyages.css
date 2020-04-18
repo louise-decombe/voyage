@@ -721,6 +721,9 @@ footer h4 {
     text-align: center;
     text-shadow: 2px 2px 2px black;
     backdrop-filter: blur(3px);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 1.1em;
 }
 
 #liensfooter li {
@@ -752,6 +755,9 @@ footer h4 {
     flex-direction: column;
     text-shadow: 2px 2px 2px black;
     backdrop-filter: blur(3px);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 1.1em;
 }
 
 #contactfooter p {
