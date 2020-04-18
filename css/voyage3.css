@@ -140,7 +140,6 @@ main {
   background-color: #1560BD;
   padding: 2%;
   margin: 1%;
-  flex-wrap:
 }
 
 /*****************************************/
@@ -426,32 +425,6 @@ main {
 }
 
 /*****************************************/
-/***********Musique*********************/
-/*************************************/
-.musique {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 1%;
-  margin: 1%;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  font-size: 120%;
-  flex-basis: 50%;
-  background-color:
-}
-
-.musique figcaption {
-  padding: 1%;
-  margin: 1%;
-}
-
-.musique figure {
-  background-color: white;
-  padding: 3%;
-  border-radius: 10px;
-}
-
-/*****************************************/
 /***********Données*********************/
 /*************************************/
 .donnees {
@@ -473,7 +446,6 @@ main {
   font-size: 200%;
   padding: 1%;
 }
-
 /*****************************************/
 /***********Insolite********************/
 /*************************************/
