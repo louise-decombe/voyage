@@ -402,7 +402,7 @@ main {
   box-shadow: 1px 1px 1px;
 }
 
-.specialite p, h3 {
+.specialite p, .specialite h3 {
   line-height: 40px;
   font-size: 100%;
   display: flex;
