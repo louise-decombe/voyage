@@ -758,6 +758,7 @@ footer h4 {
     border: 1px white solid;
     border-radius: 10px;
     font-size: 1.1em;
+    text-align: center;
 }
 
 #contactfooter p {
