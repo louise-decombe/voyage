@@ -140,7 +140,6 @@ main {
   background-color: #1560BD;
   padding: 2%;
   margin: 1%;
-  flex-wrap:
 }
 
 /*****************************************/
@@ -437,14 +436,12 @@ main {
   text-align: center;
   font-size: 120%;
   flex-basis: 50%;
-  background-color:
 }
 
 .musique figcaption {
   padding: 1%;
   margin: 1%;
 }
-
 .musique figure {
   background-color: white;
   padding: 3%;
@@ -473,7 +470,6 @@ main {
   font-size: 200%;
   padding: 1%;
 }
-
 /*****************************************/
 /***********Insolite********************/
 /*************************************/
